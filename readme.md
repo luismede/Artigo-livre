@@ -11,7 +11,6 @@ Highlights:
 
 ## TODO:
 - Programming recover password option.
-- Remove alerts error and change for text 
 
 
 ---
