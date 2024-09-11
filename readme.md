@@ -28,15 +28,15 @@ You must enter your API KEY and information in **firebase-init.js**
 
 **Clonning the repository**
 ```
-$ git clone https://github.com/luismede/articles-online/
+$ git clone https://github.com/luismede/artigo-livre
 
-$ cd articles-online
+$ cd artigo-livre
 ```
 **Installing dependencies**
 ```
 $ npm install
 ```
- **Don't forget, change your firebase-init.js**
+ **Don't forget, change your firebase-init.js and configure your firebase Auth0, Storage and Database**
 ```js
 
 const firebaseConfig = {
