@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eu tenho uma conta - Login</title>
+    <link rel="icon" type="image/x-icon" href="/src/img/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="centralize">
+
+    <div>
+        <form>
+            <div>
+                <div style="margin-bottom: 10px;"><label>E-mail</label></div>
+                <input type="email" name="email" id="email" onchange="onChangeEmail()" autocomplete="off" placeholder="seu@email.com" required />
+
+                <div class="error" id="email-required-error">Informe um e-mail válido</div>
+                <div class="error" id="email-invalid-error">Esse e-mail não existe</div>
+        </div>
+        
+            <div>
+                <div style="margin-bottom: 10px;"><label>Senha</label></div>
+                <input type="password" id="password" name="password" autocomplete="off" onchange="onChangePassword()" placeholder="Password" required/>
+
+                <div class="error" id="password-required-error">Escolha uma senha!</div>
+            </div>
+
+            <div>
+                <button type="button" class="clear" id="recovery-password-button" disabled>Esqueceu sua senha?</button>
+            </div>
+
+            <div>
+                <button type="button" class="solid" id="login-button" style="font-size: 15px;" onclick="login()" disabled>Sign In</button>
+            </div>
+
+            <div>
+                <button type="button" class="clear-with-text" onclick="register()"><p>Ainda não tem uma conta?</p>&nbsp   Criar uma conta</button>
+            </div>
+            <div id="error-login">
+                <span id="error-login-alert"></span>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-storage-compat.js"></script>
+
+<script src="/firebase-init.js"></script>
+<script src="./login.js"></script>
+<script src="../validation.js"></script>
+
+</html>

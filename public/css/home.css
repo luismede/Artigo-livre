@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+html, body {
+    background: rgb(255, 255, 255);
+    scrollbar-width: thin;
+    overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    width: auto;
+}
+
+.logo {
+    width: 60px;
+    padding-top: 15px;
+}
+
+.ul a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-left: 25px;
+    transition: 200ms;
+
+}
+
+.ul a:hover {
+  font-weight: 500;
+}
+
+.ul a:active {
+  opacity: 0.8;
+}
+
+.clear {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    padding: 8px 20px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0), 0 2px 0 0 rgba(0, 0, 0, 1);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0ms;
+  }
+
+.clear p {
+    margin-top: 5%;
+    margin-left: 10px;
+}
+
+.clear {
+    background-color: transparent;
+}
+
+
+.header {
+  margin-top: 10px;
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+  height: 300px;
+  display: flex;
+
+}
+
+.content h1 {
+  padding-top: 50px;
+  margin-left: 80px;
+  color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.8rem;
+  z-index: 1;
+}
+
+.content p {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  position: relative;
+}
+.content button {
+  margin-top: 25px;
+  padding: .9em 10em 1em;
+  border: 2px solid #000000;box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0), 0 2px 0 0 rgba(0, 0, 0, 1);
+    border-radius: 8px;
+  background-color: transparent;
+  transition: 500ms;
+  opacity: 1;
+
+}
+
+
+.content button:active {
+  opacity: 0.7;
+}
+
+.headerimage {
+  height: auto;
+  margin-top: -230px;
+  margin-left: 120%;
+
+}
+
+.artigo-area {
+  width: 100%;
+  padding: 50px 5vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 80px;
+}
+
+.artigo-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1em
+}
+
+.artigo-title {
+  color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3rem;
+}
+
+.artigo-overview {
+  margin: 10px 0 30px;
+  line-height: 20px;
+  font-family: sans-serif;
+  color: rgba(16, 16, 16);
+  font-size: .9rem;
+}
+
+.btn-read-card {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: .6em 45%;
+  background-color: transparent;
+    color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0), 0 2px 0 0 rgba(0, 0, 0, 1);
+    font-weight: 400;
+}
+
+.title-articles-area {
+    margin-top: 50px;
+    margin-left: 80px;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.3rem;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ffffff1a;
+    width: auto;
+}
+
+.footer-infos-area {
+    display: flex;
+    background: rgb(250, 250, 250);
+    padding: 20px 5vw;
+    z-index: 9;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-infos-area p {
+    color: #131313;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+.footer-infos-area a {
+    color: #000000;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .ul a {
+    margin-left: 10px;
+  }
+
+  .clear {
+    padding: .8rem;
+  }
+
+  .navbar p {
+    display: none;
+  }
+
+  .content h1 {
+    font-size: 2.3rem;
+    margin-left: 10%;
+  }
+
+
+  .content p {
+    font-size: 1.0rem;
+  }
+
+  .content button {
+    padding: 1em 5em 1em;
+
+  }
+
+  .title-articles-area {
+    font-size: 2.0rem;
+    margin-left: 5%;
+  }
+
+  .artigo-area {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .btn-read-card {
+    padding: .8em 45%;
+  }
+}

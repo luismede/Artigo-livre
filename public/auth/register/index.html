@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Criando minha conta - FREE</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/src/img/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    
+<body class="centralize">
+        <div>
+        <form>
+            <div>
+                <div style="margin-bottom: 10px;"><label>E-mail</label></div>
+
+                <input type="email" placeholder="your@email.com" autocomplete="off"  onchange="onChangeEmail()" id="email">
+
+                <div class="error" id="email-required-error">Informe um e-mail válido</div>
+                <div class="error" id="email-invalid-error">Esse e-mail não existe</div>
+            </div>
+
+            <div>
+                <div style="margin-bottom: 10px;"><label>Senha</label></div>
+
+                <input type="password" placeholder="Password" id="password" autocomplete="off" onchange="onChangePassword()">
+
+                <div class="error" id="password-required-error">Escolha uma senha!</div>
+                <div class="error" id="password-min-length-error">Senha mínima de 6 carácteres</div>
+            </div>
+
+            <div>
+                <div style="margin-bottom: 10px;"><label>Confirme sua senha</label></div>
+
+                <input type="password" id="confirmPassword" onchange="onChangeConfirmPassword()" >
+
+                <div class="error" id="password-doesnt-match-error" >Sua senha deve ser igual!</div>
+            </div>
+
+            <div>
+                <button type="button" class="solid" disabled onclick="register()" id="register-button">Criar conta</button>
+            </div>
+
+            <div>
+                <a href="/auth/login/">
+                    <button class="clear" type="button"><p style="display: inline; cursor: default;">Já tem uma conta?</p>&nbsp   Login</button></a>
+            </div>
+            <div id="error-login">
+                <span id="error-login-alert"></span>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+    <script src="/firebase-init.js"></script>
+    <script src="./register.js"></script>
+    <script src="../validation.js"></script>
+
+</html>

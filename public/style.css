@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+html, body {
+    background: rgb(243, 243, 243);
+    scrollbar-width: thin;          /* "auto" or "thin" */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    background: transparent;
+    width: auto;
+  }
+
+main {
+    margin-top: 2rem;
+}
+
+.logo {
+    width: 60px;
+    padding-top: 15px;
+  }
+
+.button-register {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    padding: 10px 25px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0ms;
+  }
+
+.button-register {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0), 0 2px 0 0 rgba(0, 0, 0, 1);
+}
+
+
+.title-initial {
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    display: inline-block;
+    position: absolute;
+    padding: 2rem 5%;
+    z-index: 1 !important;
+
+}
+.f2-text {
+  color: #151515;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  font-size: .7em;
+
+}
+
+.btn-journey {
+    display: inline-block;
+    padding: .9rem 8rem 1.1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #000000;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition-duration: 200ms;
+    align-items: center;
+    justify-items: center;
+    background: transparent;
+}
+
+.btn-journey{
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0), 0 2px 0 0 rgba(0, 0, 0, 1);
+}
+
+.btn-signin {
+    display: inline-block;
+    padding: 1.1rem 4rem 1.1rem;
+    border: 2px solid #000000;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    color: #000000;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition-duration: 200ms;
+    background: transparent;
+}
+
+.btn-signin {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0), 0 2px 0 0 rgba(0, 0, 0, 1);
+}
+
+/* Mobile Nav */
+
+
+@media only screen and (max-width: 800px) {
+    .title-initial {
+        font-size: 1.5rem;
+        left: 6px;
+    }
+
+    .f2-text  {
+        font-size: .9rem;
+    }
+    .btn-journey {
+        padding: .9rem 5.2rem 1.1rem;
+        display: block;
+    }
+
+    .btn-signin {
+        margin-top: 1rem;
+        padding: .9rem 5.3rem 1.1rem;
+    }
+
+
+}
+
