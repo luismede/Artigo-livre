@@ -38,10 +38,10 @@ $ cd artigo-livre
 ```
 **Instalando dependencias**
 ```
-$ npm install
+$ npm install -f
 ```
 
-**Iniciando o servidor, porta 80**
+**Iniciando o servidor, porta 3000**
 ```
 $ npm start
 ```
