@@ -1,12 +1,10 @@
 const express = require('express');
 const path = require('path');
-const fileUpload = require('express-fileupload');
 const app = express();
 
 let initial_path = path.join(__dirname, "public");
 
 app.use(express.static(initial_path));
-app.use(fileUpload());
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -25,7 +23,7 @@ app.use((req, res) => {
     res.json(404);
 })
 
-
 app.listen(3000, () => {
     console.log('listening......');
+    console.log(process.env.FIREBASE_API_KEY);
 });
