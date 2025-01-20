@@ -126,7 +126,7 @@ Contribuições são sempre bem-vindas! Siga os passos abaixo para contribuir:
 
 Se você tiver qualquer dúvida, pode me contatar pelo e-mail ou LinkedIn:
 - **Email**: luishenrique23h@hotmail.com
-- **LinkedIn**: [Meu LinkedIn](https://www.linkedin.com/in/luismede/)
+- **LinkedIn**: [Meu LinkedIn](https://www.linkedin.com/in/luismedes/)
 
 ---
 
